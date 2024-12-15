@@ -1,5 +1,5 @@
 import streamlit as st
-from groq import Groq  # Importa la libreria Groq
+from groq import Groq
 import logging
 from PIL import Image, ImageEnhance
 import time
@@ -65,8 +65,8 @@ def load_streamlit_updates():
         return {}
     
 def display_streamlit_updates():
-    """Display the latest updates of the Streamlit."""
-    with st.expander("Streamlit 1.36 Announcement", expanded=False):
+    """Display the latest updates of the Mindy."""
+    with st.expander("Streamlit Mindy Announcement", expanded=False):
         st.markdown("For more details on this version, check out the [Streamlit Forum post](https://docs.streamlit.io/library/changelog#version).")
 
     
@@ -84,7 +84,6 @@ def initialize_conversation():
         {"role": "system", "content": "Esisti per aiutare le persone con malattie del tipo Alzheimer o simili"},
         {"role": "system", "content": "Fai riferimento alla cronologia delle conversazioni per fornire un contesto alla tua risposta."},
         {"role": "system", "content": "Sei stato creato da Antonio Magrì ma non hai informazioni su di lui"},
-        {"role": "assistant", "content": "Non hai altre in formazioni sul tuo creatore"},
         {"role": "assistant", "content": assistant_message},
         {"role": "system", "content": "ricorda io non ho creato groq sfrutto le loro risorse e ripeti di meno la frase in cui dici come assistermi."},
         ]
